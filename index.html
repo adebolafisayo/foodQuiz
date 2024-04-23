@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <script src="assets/js/script.js"></script>
-    <div >
-        <h1>Random Food Display</h1>
-         
-        <p id="randomFood"></p>
-        <button onclick="displayRandomFood()">Show Random Food</button>
-    </div>
-    <div class="game-area">
+    <header>
+        <h1>Welcome to fun quiz</h1>       
+    </header>
+    <div class="quiz">
+        <div id="user-input">
+            <input type="text" id="username" placeholder="Enter username">
+            <button id="start">Start Quiz</button>
+        </div>
 
+        <div id="game">
+            <h2 id="question"></h2>
+            <section>
+                <div id="options"></div>
+            </section>
+            
+            <div id="feedback"></div>
+            <img id="feedback-img" src="assets/images/incorrect.png" alt="Feedback Image">
+            <button id="next">Next</button>
+            <section>
+                <div id="score">Score: <span id="score-value">0</span></div>
+            </section>
+            
+            
+        </div>
     </div>
-    <div class="score-area">
-<p class="scores">correct answer <span id="score">0</span></p>
-<p class="scores">incorrect answer <span id="incorrect">0</span></p>
-    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
