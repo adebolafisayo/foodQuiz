@@ -25,6 +25,15 @@ const scoreValueElement = document.getElementById("score-value");
 
 let questionIndex = 0;
 let score = 0;
+startButton.addEventListener("click", startQuiz);
+nextButton.addEventListener("click", () => {
+    questionIndex++;
+    if (questionIndex < quizQuestions.length) {
+        showQuestion();
+    } else {
+        endQuiz();
+    }
+});
 
 function startQuiz() {
     const username = usernameInput.value.trim();
