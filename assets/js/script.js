@@ -26,3 +26,13 @@ const scoreValueElement = document.getElementById("score-value");
 let questionIndex = 0;
 let score = 0;
 
+function startQuiz() {
+    const username = usernameInput.value.trim();
+    if (!username) {
+        alert("Please enter username!");
+        return;
+    }
+    document.getElementById("user-input").style.display = "none";
+    document.getElementById("game").style.display = "block";
+    showQuestion();
+}
