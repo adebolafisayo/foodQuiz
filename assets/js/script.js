@@ -14,5 +14,15 @@ const quizQuestions = [
     
 ];
 
+const questionElement = document.getElementById("question");
+const optionsElement = document.getElementById("options");
+const feedbackElement = document.getElementById("feedback");
+const feedbackImgElement = document.getElementById("feedback-img");
+const usernameInput = document.getElementById("username");
+const startButton = document.getElementById("start");
+const nextButton = document.getElementById("next");
+const scoreValueElement = document.getElementById("score-value");
 
+let questionIndex = 0;
+let score = 0;
 
