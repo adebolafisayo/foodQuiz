@@ -1,15 +1,18 @@
-const foods = ['Apple', 'Banana', 'Orange', 'Carrot', 'Broccoli', 'Chicken', 'Fish', 'Pasta', 'Pizza', 'Salad'];
-
-function displayRandomFood() {
-    const randomIndex = Math.floor(Math.random() * foods.length);
-    const randomFood = foods[randomIndex];
-    let buttonFields = document.getElementsByTagName('button');
-    for (let i = 0; i < buttonFields.length; i++) {
-        buttonFields[i].addEventListener('click', function() {
-            alert(`${i}`);
-        });
+const quizQuestions = [
+    {
+        question: "Which continent is Ghana",
+        options: ["Africa", "Europe", "Asia", "Madrid"],
+        answer: "Africa",
+        feedbackImg: "assets/images/incorrect.png"
+    },
+    {
+        question: "How many months is in a year?",
+        options: ["3", "4", "5", "12"],
+        answer: "12",
+        feedbackImg: "assets/images/incorrect.png"
     }
-    const randomFoodField = document.getElementById('randomFood');
     
-    randomFoodField.textContent = randomFood;
-}
+];
+
+
+
