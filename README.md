@@ -1,39 +1,97 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+[live site](https://adebolafisayo.github.io/funQuiz/)
 
-Welcome,
+Welcome to fun Quiz. This site is a 10 question quiz site that test users knowledge around places in the world.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
+Features
 ---
+- Homepage
+   
+   `-` This page allows the user to enter a username and also throws an error message when a username is not added.
 
-Happy coding!
+   `-` There is a start quiz button on this page that starts quiz as soon as it's clicked.
+
+![alt text](/assets/images/image.png)
+- Question and options section
+
+  `-` This section displays the question and user is able to click an option.
+
+  `-`This area shows the score 
+
+![alt text](/assets/images/image-1.png)
+
+- Answer Page
+  
+  `-` This page gives user feedback that an answer is correct or incorrect.
+   
+   `-` When an answer is incorrect it feedbacks the correct answer as a string.
+   
+   `-` The score updates when the answer is wrong or right
+
+   `-`The next button takes user to the next page.
+
+  ![alt text](/assets/images/image-2.png)
+
+ - End of quiz Page
+
+   `-` This page shows the total score of the quiz
+ ![alt text](/assets/images/image-3.png)
+
+ Testing
+ ---
+`-` I can confirm this page works in chrome and microsoft edge
+
+`-`I can confirm the homepage,score and quiz works as expected
+
+
+# Unfixed Bug
+
+User is able to re-answer a question multiple times
+
+# Validator Testing
+- HTML
+   
+   `-` No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fadebolafisayo.github.io%2FfunQuiz%2F)
+   ![alt text](/assets/images/image-4.png)
+- CSS
+   
+   `-` No errors were found when passing through the official [jigsaw validator](https://jigsaw.w3.org/css-validator/)
+   ![alt text](/assets/images/image-5.png)
+
+- Accessibility
+
+  `-`Accessibility test passed using lighthouse through dev tool
+  ![alt text](/assets/images/image-6.png)
+
+  Deployment
+  ---
+  This site was deployed to github pages using this steps:
+  
+  `-` Go to the Settings tab of your GitHub repo.
+  
+  `-` On the left-hand sidebar, in the Code and automation section, select Pages.
+
+  `-` Source is set to 'Deploy from Branch'.
+Main branch is selected.
+  
+  `-` Folder is set to / (root).
+
+   `-` Under Branch, click Save.
+
+   `-` Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repo.
+
+  `-`On the right-hand side, in the Environments section, click on 'github-pages'.
+
+   `-`Click View deployment to see the [live site](https://adebolafisayo.github.io/funQuiz/)
+
+   Credits
+   ---
+   I did some research on stack overflow when i was stuck 
+
+
+
+
+
+
+
+
+ 
