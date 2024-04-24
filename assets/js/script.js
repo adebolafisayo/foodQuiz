@@ -45,3 +45,21 @@ function startQuiz() {
     document.getElementById("game").style.display = "block";
     showQuestion();
 }
+
+function showQuestion() {
+    const currentQuestion = quizQuestions[questionIndex];
+    questionElement.textContent = currentQuestion.question;
+    optionsElement.innerHTML = "";
+
+    currentQuestion.options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.classList.add("option");
+        button.addEventListener("click", () => handleAnswer(option)); 
+        optionsElement.appendChild(button);
+    });
+
+    feedbackElement.textContent = "";
+    //feedbackImgElement.src = "assets/images/incorrect.png";
+    nextButton.style.display = "none";
+}
