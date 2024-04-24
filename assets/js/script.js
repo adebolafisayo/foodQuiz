@@ -63,3 +63,22 @@ function showQuestion() {
     //feedbackImgElement.src = "assets/images/incorrect.png";
     nextButton.style.display = "none";
 }
+
+function handleAnswer(preferredOption) {
+    const currentQuestion = quizQuestions[questionIndex];
+    if (preferredOption === currentQuestion.answer) {
+        score++;
+       
+        feedbackElement.textContent = "Correct!";
+        feedbackImgElement.src = currentQuestion.feedbackImg;
+    } else {
+       
+        feedbackElement.textContent = "Incorrect! The correct answer is: " + currentQuestion.answer;
+        feedbackImgElement.src = "assets/images/incorrect.png";
+
+    }
+
+    scoreValueElement.textContent = score;
+   
+    nextButton.style.display = "block";
+}
