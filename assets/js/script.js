@@ -82,3 +82,11 @@ function handleAnswer(preferredOption) {
    
     nextButton.style.display = "block";
 }
+
+function endQuiz() {
+    questionElement.textContent = "";
+    optionsElement.innerHTML = "";
+    feedbackElement.textContent = `Quiz is over! Your final score is ${score}.`;
+    feedbackImgElement.style.display = "none";
+    nextButton.style.display = "none";
+}
