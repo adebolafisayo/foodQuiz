@@ -3,13 +3,11 @@ const quizQuestions = [
         question: "Which continent is Ghana",
         options: ["Africa", "Europe", "Asia", "Madrid"],
         answer: "Africa",
-        feedbackImg: "assets/images/incorrect.png"
     },
     {
-        question: "How many months is in a year?",
+        question: "How many month is it in a year?",
         options: ["3", "4", "5", "12"],
-        answer: "12",
-        feedbackImg: "assets/images/incorrect.png"
+        answer: "4",
     }
     
 ];
@@ -17,7 +15,6 @@ const quizQuestions = [
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
 const feedbackElement = document.getElementById("feedback");
-const feedbackImgElement = document.getElementById("feedback-img");
 const usernameInput = document.getElementById("username");
 const startButton = document.getElementById("start");
 const nextButton = document.getElementById("next");
@@ -25,6 +22,7 @@ const scoreValueElement = document.getElementById("score-value");
 
 let questionIndex = 0;
 let score = 0;
+
 startButton.addEventListener("click", startQuiz);
 nextButton.addEventListener("click", () => {
     questionIndex++;
@@ -60,7 +58,6 @@ function showQuestion() {
     });
 
     feedbackElement.textContent = "";
-    //feedbackImgElement.src = "assets/images/incorrect.png";
     nextButton.style.display = "none";
 }
 
@@ -70,11 +67,9 @@ function handleAnswer(preferredOption) {
         score++;
        
         feedbackElement.textContent = "Correct!";
-        feedbackImgElement.src = currentQuestion.feedbackImg;
     } else {
        
         feedbackElement.textContent = "Incorrect! The correct answer is: " + currentQuestion.answer;
-        feedbackImgElement.src = "assets/images/incorrect.png";
 
     }
 
@@ -82,11 +77,10 @@ function handleAnswer(preferredOption) {
    
     nextButton.style.display = "block";
 }
-
+  
 function endQuiz() {
     questionElement.textContent = "";
     optionsElement.innerHTML = "";
     feedbackElement.textContent = `Quiz is over! Your final score is ${score}.`;
-    feedbackImgElement.style.display = "none";
     nextButton.style.display = "none";
 }
