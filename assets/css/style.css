@@ -32,3 +32,6 @@ button {
 #game {
     display: none;
 }
+#options {
+    margin-top: 20px;
+}
