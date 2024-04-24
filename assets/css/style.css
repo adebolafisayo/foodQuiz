@@ -35,3 +35,8 @@ button {
 #options {
     margin-top: 20px;
 }
+#feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
