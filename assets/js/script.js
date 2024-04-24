@@ -23,6 +23,7 @@ const scoreValueElement = document.getElementById("score-value");
 let questionIndex = 0;
 let score = 0;
 
+//actions taken as soon as button is clicked
 startButton.addEventListener("click", startQuiz);
 nextButton.addEventListener("click", () => {
     questionIndex++;
