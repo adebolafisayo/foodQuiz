@@ -8,7 +8,7 @@ const quizQuestions = [
     {
         question: "How many month is it in a year?",
         options: ["3", "4", "5", "12"],
-        answer: "4",
+        answer: "12",
     },
     {
         question: "Which continent is China?",
